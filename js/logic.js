@@ -36,8 +36,8 @@ function clean() {
     round1Pc.className = "box-result";
     round2Pc.className = "box-result";
     round3Pc.className = "box-result";
-    avatarPy.src="../src/img/winner.png";
-    avatarPc.src="../src/img/winner.png";
+    avatarPy.src="./src/img/winner.png";
+    avatarPc.src="./src/img/winner.png";
     optionPy.className = "play-option";
     optionPc.className = "play-option";
     winnerMessage.classList.add("hide");
@@ -134,16 +134,16 @@ function game(player) {
 function changeAvatar(result) {
     switch (result) {
         case 0:
-            avatarPy.src = "../src/img/loser.png";
-            avatarPc.src = "../src/img/loser.png";
+            avatarPy.src = "./src/img/loser.png";
+            avatarPc.src = "./src/img/loser.png";
             break;
         case 1:
-            avatarPy.src = "../src/img/winner.png";
-            avatarPc.src = "../src/img/loser.png";
+            avatarPy.src = "./src/img/winner.png";
+            avatarPc.src = "./src/img/loser.png";
             break;
         case 2:
-            avatarPy.src= "../src/img/loser.png";
-            avatarPc.src= "../src/img/winner.png";
+            avatarPy.src= "./src/img/loser.png";
+            avatarPc.src= "./src/img/winner.png";
             break;
     }
 }
@@ -172,30 +172,30 @@ function changeOptionPlayed(result) {
 function changeOptionImage(py, pc) {
     switch(py) {
         case 1:
-            optionPyImage.src="../src/img/puño.png";
-            optionPyName.src="../src/img/piedra.png";
+            optionPyImage.src="./src/img/puño.png";
+            optionPyName.src="./src/img/piedra.png";
             break;
         case 2:
-            optionPyImage.src="../src/img/palma.png";
-            optionPyName.src="../src/img/papel.png";
+            optionPyImage.src="./src/img/palma.png";
+            optionPyName.src="./src/img/papel.png";
             break;
         case 3:
-            optionPyImage.src="../src/img/paz.png";
-            optionPyName.src="../src/img/tijera.png";
+            optionPyImage.src="./src/img/paz.png";
+            optionPyName.src="./src/img/tijera.png";
             break;
     }
     switch(pc) {
         case 1:
-            optionPcImage.src="../src/img/puño.png";
-            optionPcName.src="../src/img/piedra.png";
+            optionPcImage.src="./src/img/puño.png";
+            optionPcName.src="./src/img/piedra.png";
             break;
         case 2:
-            optionPcImage.src="../src/img/palma.png";
-            optionPcName.src="../src/img/papel.png";
+            optionPcImage.src="./src/img/palma.png";
+            optionPcName.src="./src/img/papel.png";
             break;
         case 3:
-            optionPcImage.src="../src/img/paz.png";
-            optionPcName.src="../src/img/tijera.png";
+            optionPcImage.src="./src/img/paz.png";
+            optionPcName.src="./src/img/tijera.png";
             break;
     }
 }
