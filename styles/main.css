@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    padding-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4158D0;
+    background-image: linear-gradient(160deg, #4158D0 0%, #c011b4 100%);
+    font-family: sans-serif;
+}
+body header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+body header h1 {
+    font-size: 45px;
+    color: white;
+}
+main {
+    position: relative;
+}
+.main-game--home {
+    width: 850px;
+    height: 600px;
+    border: 3px solid #0d33af;
+    border-radius: 20px;
+    background: rgba(113, 215, 245, .8);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "player pc"
+    "options options";
+}
+.main-game--start {
+    background: rgba(113, 215, 245, 1);
+}
+.home-display {
+    width: 850px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;    
+}
+.play-button {
+    height: 100px;
+    width: 200px;
+    color: black;
+    background-color: #d5f543;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 100px);
+    font-size: 50px;
+    opacity: 1;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#restart-button {
+    position: absolute;
+    left: calc(50% - 300px);
+    top: 56%;
+}
+#home-button {
+    position: absolute;
+    left: calc(50% + 100px);
+    top: 56%;
+}
+#winner-message {
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 140px);
+    cursor: default;
+}
+.player-side, .pc-side {
+    text-align: center;
+    align-items: center;
+}
+.box-result {
+    height: 37px;
+    width: 37px;
+    border: 2px solid black;
+    margin-right: 10px;
+    background-color: white;    
+}
+.box-result-win {
+    background-image: url("../src/img/x-verde.svg");
+}
+.box-result-lose {
+    background-image: url("../src/img/x-rojo.svg");
+}
+.score-player, .score-pc {
+    display: flex;
+    margin-left: 20px;
+}
+.avatar-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name-player, .name-pc {
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.name-pc {
+    text-align: end;
+    padding-right: 70px;
+}
+.avatar-img {
+    height: 300px;
+}
+.play-option {
+    width: 90px;
+    height: 90px;
+    border: 4px ridge black;
+    background: white;
+    margin: 0 20px;
+    cursor: pointer;
+}
+#option-player, #option-pc {
+    cursor: default;
+}
+.win-play-option {
+    width: 90px;
+    height: 90px;
+    border: 5px ridge black;
+    outline: 3px solid green;
+    margin: 0 20px;
+}
+.lose-play-option {
+    width: 90px;
+    height: 90px;
+    border: 5px ridge black;
+    outline: 3px solid red;
+    margin: 0 20px;
+}
+.tie-play-option {
+    width: 90px;
+    height: 90px;
+    border: 5px ridge black;
+    outline: 3px solid yellow;
+    margin: 0 20px;
+}
+.options-container {
+    display: flex;
+    padding: 20px;
+}
+.options {
+    width: 100%;
+    display: flex;
+    grid-area: options;
+    justify-content: space-around;
+}
+.image-button {
+    max-height: 67%;
+    max-width: 70%;
+}
+.hide {
+    display: none;
+}

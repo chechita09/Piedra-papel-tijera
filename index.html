@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Piedra, Papel o Tijera</h1>
+    </header>
+    <main>
+        <button class="play-button hide" id="home-button" onclick="goHome()">Home</button>
+        <button class="play-button hide" id="restart-button" onclick="restartGame()">Restart</button>
+        <button class="play-button" id="play-button" onclick="startGame()">Play</button>
+        <div class="play-button hide" id="winner-message"></div>
+        <div class="home-display" id="home-display"></div>
+        <div class="main-game--home" id="main-game--home">
+            <div class="player-side">
+                <div class="score-player">
+                    <div class="box-result" id="round-1-py"></div>
+                    <div class="box-result" id="round-2-py"></div>
+                    <div class="box-result" id="round-3-py"></div>
+                </div>
+                <div class="avatar-container">
+                    <p class="name-player">Jugador</p>
+                    <img class="avatar-img" id="avatar-py" src="./src/img/winner.png">
+                    <div class="play-option" id="option-player">
+                        <img class="image-button" id="player-option-image" src="">
+                        <img class="image-button" id="player-option-name" src="">                        
+                    </div>
+                </div>                    
+            </div>
+            <div class="pc-side">
+                <div class="score-pc">
+                    <div class="box-result" id="round-1-pc"></div>
+                    <div class="box-result" id="round-2-pc"></div>
+                    <div class="box-result" id="round-3-pc"></div>
+                </div>
+                <div class="avatar-container">
+                    <p class="name-pc">Pc</p>
+                    <div class="play-option" id="option-pc">
+                        <img class="image-button" id="pc-option-image" src="">
+                        <img class="image-button" id="pc-option-name" src="">
+                    </div>
+                    <img class="avatar-img" id="avatar-pc" src="./src/img/winner.png" alt="">
+                </div>
+            </div>
+            <div class="options">                
+                <div class="options-container">
+                    <button class="play-option" onclick="game(1)">
+                        <img class="image-button" src="./src/img/puño.png"/>
+                        <img class="image-button" src="./src/img/piedra.png"/>
+                    </button>
+                    <button class="play-option" onclick="game(2)">
+                        <img class="image-button" src="./src/img/palma.png"/>
+                        <img class="image-button" src="./src/img/papel.png"/>
+                    </button>
+                    <button class="play-option" onclick="game(3)">
+                        <img class="image-button" src="./src/img/paz.png"/>
+                        <img class="image-button" src="./src/img/tijera.png"/>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./js/logic.js"></script>
+</body>
+</html>
