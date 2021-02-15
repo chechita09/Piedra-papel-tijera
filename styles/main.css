@@ -98,10 +98,10 @@ main {
     background-color: white;    
 }
 .box-result-win {
-    background-image: url("./src/img/x-verde.svg");
+    background-image: url("../src/img/x-verde.svg");
 }
 .box-result-lose {
-    background-image: url("./src/img/x-rojo.svg");
+    background-image: url("../src/img/x-rojo.svg");
 }
 .score-player, .score-pc {
     display: flex;
